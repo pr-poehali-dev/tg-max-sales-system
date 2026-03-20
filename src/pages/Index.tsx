@@ -78,7 +78,7 @@ const program = [
 
 const tariffs = [
   {
-    name: "Система TG и МАХ",
+    name: "Система продаж TG и МАХ",
     price: "2 500",
     badge: null,
     subprice: null,
@@ -100,7 +100,7 @@ const tariffs = [
     btnText: "Прийти с другом",
     btnUrl: "https://payform.ru/7maZSRn/",
     features: [
-      { text: "Приходишь с другом — каждый платит вместо 2 500 ₽", accent: true },
+      { text: "Приходишь с другом — доступ на двоих всего за 3000 руб", accent: true },
       { text: "3 дня практикума и доступа к живым эфирам", accent: false },
       { text: "Чат практикума", accent: false },
       { text: "Записи всех встреч", accent: false },
@@ -240,8 +240,6 @@ export default function Index() {
         </div>
       </section>
 
-
-
       {/* ─── СТРАХ ─── */}
       <section className="py-14 relative overflow-hidden">
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(220,38,38,0.06) 0%, transparent 70%)" }} />
@@ -284,7 +282,7 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
-              Решение — <span className="gradient-text">система,</span> а не хаотичные действия
+              Система, вместо <span className="gradient-text">тревоги и неопределённости</span>
             </h2>
             <p className="text-center mb-16" style={{ color: "#7c6d9e" }}>На практикуме ты решаешь три ключевых задачи</p>
           </AnimatedSection>
@@ -350,7 +348,7 @@ export default function Index() {
               Программа
               <span className="gradient-text"> практикума</span>
             </h2>
-            <p className="text-center mb-12" style={{ color: "#7c6d9e" }}>Три плотных дня — три готовых системы</p>
+
           </AnimatedSection>
           <AnimatedSection>
             <div className="flex justify-center gap-2 mb-10 flex-wrap">
@@ -406,8 +404,7 @@ export default function Index() {
           <AnimatedSection>
             <div className="max-w-2xl mx-auto text-center">
               <h2 className="font-oswald font-bold mb-6" style={{ fontSize: "clamp(2rem, 5vw, 3rem)", color: "#f0eaff" }}>
-                Это не обучение.
-                <span className="gradient-text"> Это сборка системы</span>
+                <span className="gradient-text">Собери свою систему</span>
               </h2>
               <p className="text-lg mb-10" style={{ color: "#a78bfa" }}>
                 Ты не просто "посмотришь уроки" — ты выйдешь с готовыми инструментами
@@ -441,7 +438,7 @@ export default function Index() {
               Выбери
               <span className="gradient-text"> свой формат</span>
             </h2>
-            <p className="text-center mb-10" style={{ color: "#7c6d9e" }}></p>
+
           </AnimatedSection>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
             {tariffs.map((t, i) => (
@@ -482,8 +479,7 @@ export default function Index() {
                     href={t.btnUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`block w-full py-3 rounded-xl font-bold text-center transition-all hover:scale-105 active:scale-95 ${t.highlight ? "btn-gradient text-white" : "glass"}`}
-                    style={!t.highlight ? { color: "#c084fc", border: "1px solid rgba(168,85,247,0.4)" } : {}}
+                    className="block w-full py-3 rounded-xl font-bold text-center text-white transition-all hover:scale-105 active:scale-95 btn-gradient glow-violet-sm"
                   >
                     <span>{t.btnText}</span>
                   </a>
@@ -498,7 +494,7 @@ export default function Index() {
       <section className="py-14" style={{ background: "#0d0918" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="font-oswald font-bold text-center mb-16" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
+            <h2 className="font-oswald font-bold text-center mb-8" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
               Частые
               <span className="gradient-text"> вопросы</span>
             </h2>
