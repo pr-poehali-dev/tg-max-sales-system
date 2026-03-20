@@ -517,7 +517,7 @@ export default function Index() {
                     {t.features.map((f, fi) => (
                       <li key={fi} className="flex items-start gap-2">
                         <Icon name="CheckCircle" size={16} className="flex-shrink-0 mt-0.5" style={{ color: "#a855f7" }} />
-                        <span className="text-sm" style={{ color: "#c4b5fd" }}>{f}</span>
+                        <span className="text-sm text-green-300" style={{ color: "#c4b5fd" }}>{f}</span>
                       </li>
                     ))}
                   </ul>
