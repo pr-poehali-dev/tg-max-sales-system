@@ -193,9 +193,9 @@ export default function Index() {
               </p>
             </div>
 
-            <button className="btn-gradient text-white font-bold text-lg px-10 py-4 rounded-2xl glow-violet-sm transition-transform hover:scale-105 active:scale-95">
+            <a href="https://payform.ru/3saZSPl/" target="_blank" rel="noopener noreferrer" className="inline-block btn-gradient text-white font-bold text-lg px-10 py-4 rounded-2xl glow-violet-sm transition-transform hover:scale-105 active:scale-95">
               <span>Принять участие</span>
-            </button>
+            </a>
           </div>
 
           <div className="relative flex justify-center items-center">
@@ -521,12 +521,15 @@ export default function Index() {
                       </li>
                     ))}
                   </ul>
-                  <button
-                    className={`w-full py-3 rounded-xl font-bold transition-all hover:scale-105 active:scale-95 ${t.highlight ? "btn-gradient text-white" : "glass"}`}
+                  <a
+                    href="https://payform.ru/3saZSPl/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`block w-full py-3 rounded-xl font-bold text-center transition-all hover:scale-105 active:scale-95 ${t.highlight ? "btn-gradient text-white" : "glass"}`}
                     style={!t.highlight ? { color: "#c084fc", border: "1px solid rgba(168,85,247,0.4)" } : {}}
                   >
                     <span>Выбрать тариф</span>
-                  </button>
+                  </a>
                 </div>
               </AnimatedSection>
             ))}
