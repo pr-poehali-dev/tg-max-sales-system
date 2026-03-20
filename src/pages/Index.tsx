@@ -30,20 +30,12 @@ function AnimatedSection({ children, className = "", delay = 0 }: { children: Re
   );
 }
 
-const painPoints = [
-  { icon: "TrendingDown", text: "Ведёшь канал, но нет стабильных продаж" },
-  { icon: "HelpCircle", text: "Не понимаешь, что делать в MAX" },
-  { icon: "AlertTriangle", text: "Боишься потерять Telegram и клиентов" },
-  { icon: "Zap", text: "Много действий → мало результата" },
-  { icon: "Shuffle", text: "Нет системы, только хаос" },
-];
 
 const results = [
-  { icon: "Smartphone", title: "Готовый канал в MAX", desc: "Полностью настроенный с нуля за 3 дня" },
-  { icon: "Users", title: "Перенос аудитории из TG", desc: "Быстро и без потерь" },
-  { icon: "Package", title: "Упакованный профиль под продажи", desc: "Работает на тебя 24/7" },
-  { icon: "FileText", title: "Контент, который приводит заявки", desc: "Система постов без ежедневного напряжения" },
-  { icon: "DollarSign", title: "Модель продаж под тебя", desc: "5 устойчивых моделей — выбираешь свою" },
+  { icon: "Radio", title: "Превратишь канал в систему привлечения клиентов", desc: "" },
+  { icon: "Smartphone", title: "Настроишь в МАХ новую площадку для продаж", desc: "" },
+  { icon: "FileText", title: "Научишься превращать контент в заявки и деньги", desc: "" },
+  { icon: "TrendingUp", title: "Соберёшь устойчивую систему, которая работает на любой площадке", desc: "" },
 ];
 
 const program = [
@@ -142,11 +134,11 @@ const faqs = [
     a: "Есть записи всех встреч. Смотришь в любое удобное время в любом темпе — ничего не пропустишь.",
   },
   {
-    q: "Я не понимаю MAX",
-    a: "Разберём с нуля. Первый день практикума полностью посвящён настройке канала в MAX — ты сделаешь всё вместе с нами.",
+    q: "Я не понимаю, что надо делать в МАХ",
+    a: "Разберём с нуля. Первый день практикума полностью посвящён настройке канала в МАХ — ты сделаешь всё вместе с нами.",
   },
   {
-    q: "У меня маленький канал",
+    q: "У меня нет аудитории, есть смысл идти на практикум?",
     a: "Система работает с любого уровня. Важна не размер аудитории, а правильная упаковка и модель продаж.",
   },
 ];
@@ -167,7 +159,7 @@ export default function Index() {
             style={{ background: "radial-gradient(circle, rgba(236,72,153,0.12) 0%, transparent 70%)" }} />
         </div>
 
-        <div className="container mx-auto px-4 py-20 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+        <div className="container mx-auto px-4 py-12 grid lg:grid-cols-2 gap-8 items-center relative z-10">
           <div className="space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium"
               style={{ color: "#c084fc" }}>
@@ -204,35 +196,35 @@ export default function Index() {
             </a>
           </div>
 
-          <div className="relative flex justify-center items-center">
-            <div className="relative float-anim">
+          <div className="relative flex justify-center items-center mt-4 lg:mt-0">
+            <div className="relative float-anim mx-8 lg:mx-0">
               <div className="absolute inset-[-20px] rounded-3xl"
                 style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.3) 0%, transparent 70%)" }} />
               <img
                 src={HERO_IMG}
                 alt="Интерфейс MAX на телефоне"
                 className="relative z-10 rounded-3xl glow-violet"
-                style={{ maxWidth: "380px", width: "100%" }}
+                style={{ maxWidth: "340px", width: "100%" }}
               />
-              <div className="notif-1 absolute top-[10%] right-[-10%] glass rounded-2xl px-3 py-2 flex items-center gap-2 z-20"
-                style={{ minWidth: "160px" }}>
-                <span className="text-xl">💰</span>
+              <div className="notif-1 absolute top-[10%] right-[-5%] lg:right-[-10%] glass rounded-2xl px-3 py-2 flex items-center gap-2 z-20"
+                style={{ minWidth: "140px" }}>
+                <span className="text-lg">💰</span>
                 <div>
                   <p className="text-xs font-bold" style={{ color: "#f0eaff" }}>Новая заявка!</p>
                   <p className="text-xs" style={{ color: "#a78bfa" }}>+5 000 ₽</p>
                 </div>
               </div>
-              <div className="notif-2 absolute top-[40%] right-[-15%] glass rounded-2xl px-3 py-2 flex items-center gap-2 z-20"
-                style={{ minWidth: "170px" }}>
-                <span className="text-xl">✅</span>
+              <div className="notif-2 absolute top-[40%] right-[-5%] lg:right-[-15%] glass rounded-2xl px-3 py-2 flex items-center gap-2 z-20"
+                style={{ minWidth: "150px" }}>
+                <span className="text-lg">✅</span>
                 <div>
                   <p className="text-xs font-bold" style={{ color: "#f0eaff" }}>Оплата получена</p>
                   <p className="text-xs" style={{ color: "#86efac" }}>Клиент из MAX</p>
                 </div>
               </div>
-              <div className="notif-3 absolute bottom-[20%] left-[-10%] glass rounded-2xl px-3 py-2 flex items-center gap-2 z-20"
-                style={{ minWidth: "155px" }}>
-                <span className="text-xl">📩</span>
+              <div className="notif-3 absolute bottom-[20%] left-[-5%] lg:left-[-10%] glass rounded-2xl px-3 py-2 flex items-center gap-2 z-20"
+                style={{ minWidth: "140px" }}>
+                <span className="text-lg">📩</span>
                 <div>
                   <p className="text-xs font-bold" style={{ color: "#f0eaff" }}>Хочу на консультацию</p>
                   <p className="text-xs" style={{ color: "#a78bfa" }}>2 мин назад</p>
@@ -248,48 +240,10 @@ export default function Index() {
         </div>
       </section>
 
-      {/* ─── БОЛЬ ─── */}
-      <section className="py-24 relative" style={{ background: "#0d0918" }}>
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[1px]"
-            style={{ background: "linear-gradient(to right, transparent, rgba(168,85,247,0.4), transparent)" }} />
-        </div>
-        <div className="container mx-auto px-4">
-          <AnimatedSection>
-            <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
-              Если сейчас у тебя так —
-              <span className="gradient-text"> тебе сюда</span>
-            </h2>
-            <p className="text-center mb-16" style={{ color: "#7c6d9e" }}>Проверь себя — это ли мешает двигаться вперёд?</p>
-          </AnimatedSection>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
-            {painPoints.map((p, i) => (
-              <AnimatedSection key={i} delay={i * 100}>
-                <div className="glass rounded-2xl p-5 flex items-start gap-4 hover:scale-[1.02] transition-transform"
-                  style={{ borderRadius: "16px" }}>
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center"
-                    style={{ background: "rgba(168,85,247,0.15)" }}>
-                    <Icon name={p.icon} size={20} style={{ color: "#a855f7" }} />
-                  </div>
-                  <p className="font-medium leading-snug pt-1" style={{ color: "#e2d9f3" }}>{p.text}</p>
-                </div>
-              </AnimatedSection>
-            ))}
-            <AnimatedSection delay={500} className="sm:col-span-2 lg:col-span-3">
-              <div className="text-center p-5 rounded-2xl"
-                style={{ background: "linear-gradient(135deg, rgba(139,92,246,0.15), rgba(236,72,153,0.1))", border: "1px solid rgba(168,85,247,0.3)" }}>
-                <p className="font-bold text-lg" style={{ color: "#f0eaff" }}>
-                  👉 Именно для таких экспертов создан этот практикум
-                </p>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
 
       {/* ─── СТРАХ ─── */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-14 relative overflow-hidden">
         <div className="absolute inset-0" style={{ background: "radial-gradient(ellipse 70% 60% at 50% 50%, rgba(220,38,38,0.06) 0%, transparent 70%)" }} />
         <div className="container mx-auto px-4">
           <AnimatedSection>
@@ -326,7 +280,7 @@ export default function Index() {
       </section>
 
       {/* ─── РЕШЕНИЕ ─── */}
-      <section className="py-24" style={{ background: "#0d0918" }}>
+      <section className="py-14" style={{ background: "#0d0918" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
@@ -364,26 +318,23 @@ export default function Index() {
       </section>
 
       {/* ─── РЕЗУЛЬТАТЫ ─── */}
-      <section className="py-24 relative overflow-hidden gradient-bg-section">
+      <section className="py-14 relative overflow-hidden gradient-bg-section">
         <div className="container mx-auto px-4">
           <AnimatedSection>
-            <h2 className="font-oswald font-bold text-center mb-16" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
-              Результат после
-              <span className="gradient-text"> практикума</span>
+            <h2 className="font-oswald font-bold text-center mb-10" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
+              Твой результат
+              <span className="gradient-text"> на практикуме</span>
             </h2>
           </AnimatedSection>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 gap-4 max-w-3xl mx-auto">
             {results.map((r, i) => (
               <AnimatedSection key={i} delay={i * 100}>
-                <div className="glass rounded-2xl p-6 flex gap-4 items-start hover:scale-[1.02] transition-transform h-full">
-                  <div className="flex-shrink-0 w-12 h-12 rounded-xl flex items-center justify-center glow-violet-sm"
+                <div className="glass rounded-2xl p-5 flex gap-4 items-start hover:scale-[1.02] transition-transform h-full">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-xl flex items-center justify-center glow-violet-sm"
                     style={{ background: "linear-gradient(135deg, #7c3aed, #a855f7)" }}>
-                    <Icon name={r.icon} size={22} className="text-white" />
+                    <Icon name={r.icon} size={20} className="text-white" />
                   </div>
-                  <div>
-                    <h3 className="font-bold mb-1" style={{ color: "#f0eaff" }}>{r.title}</h3>
-                    <p className="text-sm" style={{ color: "#9ca3af" }}>{r.desc}</p>
-                  </div>
+                  <p className="font-semibold leading-snug" style={{ color: "#f0eaff" }}>{r.title}</p>
                 </div>
               </AnimatedSection>
             ))}
@@ -392,7 +343,7 @@ export default function Index() {
       </section>
 
       {/* ─── ПРОГРАММА ─── */}
-      <section className="py-24" style={{ background: "#0a0612" }}>
+      <section className="py-14" style={{ background: "#0a0612" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
@@ -449,7 +400,7 @@ export default function Index() {
       </section>
 
       {/* ─── КЛЮЧЕВОЙ СМЫСЛ ─── */}
-      <section className="py-24 relative overflow-hidden"
+      <section className="py-14 relative overflow-hidden"
         style={{ background: "linear-gradient(135deg, rgba(109,40,217,0.15) 0%, rgba(124,58,237,0.1) 50%, rgba(236,72,153,0.08) 100%), #0d0918" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
@@ -483,14 +434,14 @@ export default function Index() {
       </section>
 
       {/* ─── ТАРИФЫ ─── */}
-      <section id="tariffs" className="py-24" style={{ background: "#0a0612" }}>
+      <section id="tariffs" className="py-14" style={{ background: "#0a0612" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
               Выбери
               <span className="gradient-text"> свой формат</span>
             </h2>
-            <p className="text-center mb-16" style={{ color: "#7c6d9e" }}>Три варианта участия — один результат</p>
+            <p className="text-center mb-10" style={{ color: "#7c6d9e" }}></p>
           </AnimatedSection>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto items-start">
             {tariffs.map((t, i) => (
@@ -544,7 +495,7 @@ export default function Index() {
       </section>
 
       {/* ─── FAQ ─── */}
-      <section className="py-24" style={{ background: "#0d0918" }}>
+      <section className="py-14" style={{ background: "#0d0918" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="font-oswald font-bold text-center mb-16" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
@@ -580,7 +531,7 @@ export default function Index() {
       </section>
 
       {/* ─── ФИНАЛЬНЫЙ CTA ─── */}
-      <section className="py-32 relative overflow-hidden">
+      <section className="py-16 relative overflow-hidden">
         <div className="absolute inset-0"
           style={{ background: "radial-gradient(ellipse 80% 70% at 50% 50%, rgba(139,92,246,0.2) 0%, transparent 70%), #0a0612" }} />
         <div className="absolute top-0 left-0 right-0 h-px pointer-events-none"
@@ -590,7 +541,7 @@ export default function Index() {
           <AnimatedSection>
             <div className="max-w-3xl mx-auto">
               <h2 className="font-oswald font-bold mb-6" style={{ fontSize: "clamp(2rem, 5vw, 3.5rem)", color: "#f0eaff" }}>
-                Ты можешь продолжать хаос
+                Ты можешь продолжать жить в хаосе
                 <br />
                 <span className="gradient-text">или собрать систему за 3 дня</span>
               </h2>
