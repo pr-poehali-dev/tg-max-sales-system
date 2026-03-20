@@ -91,10 +91,10 @@ const tariffs = [
     badge: null,
     subprice: null,
     features: [
-      "3 дня практикума и доступа к живым эфирам",
-      "Чат практикума",
-      "Записи всех встреч",
-      "Шаблоны, промты, инструкции и бонусные материалы",
+      { text: "3 дня практикума и доступа к живым эфирам", accent: false },
+      { text: "Чат практикума", accent: false },
+      { text: "Записи всех встреч", accent: false },
+      { text: "Шаблоны, промты, инструкции и бонусные материалы", accent: false },
     ],
     highlight: false,
   },
@@ -104,11 +104,11 @@ const tariffs = [
     badge: "Скидка при оплате вдвоём",
     subprice: null,
     features: [
-      "Приходишь с другом — каждый платит вместо 2 500 ₽",
-      "3 дня практикума и доступа к живым эфирам",
-      "Чат практикума",
-      "Записи всех встреч",
-      "Шаблоны, промты, инструкции и бонусные материалы",
+      { text: "Приходишь с другом — каждый платит вместо 2 500 ₽", accent: true },
+      { text: "3 дня практикума и доступа к живым эфирам", accent: false },
+      { text: "Чат практикума", accent: false },
+      { text: "Записи всех встреч", accent: false },
+      { text: "Шаблоны, промты, инструкции и бонусные материалы", accent: false },
     ],
     highlight: false,
   },
@@ -118,13 +118,13 @@ const tariffs = [
     badge: null,
     subprice: null,
     features: [
-      "Личная консультация: разбираем проект, позиционирование, продукт, деньги, контент, продвижение",
-      "Подбираем эффективную модель продаж под ваши данные",
-      "Пошаговый план действий в условиях неопределённости",
-      "3 дня практикума и доступа к живым эфирам",
-      "Чат практикума",
-      "Записи всех встреч",
-      "Шаблоны, промты, инструкции и бонусные материалы",
+      { text: "Личная консультация: разбираем проект, позиционирование, продукт, деньги, контент, продвижение", accent: true },
+      { text: "Подбираем эффективную модель продаж под ваши данные", accent: false },
+      { text: "Пошаговый план действий в условиях неопределённости", accent: false },
+      { text: "3 дня практикума и доступа к живым эфирам", accent: false },
+      { text: "Чат практикума", accent: false },
+      { text: "Записи всех встреч", accent: false },
+      { text: "Шаблоны, промты, инструкции и бонусные материалы", accent: false },
     ],
     highlight: true,
   },
@@ -516,8 +516,8 @@ export default function Index() {
                   <ul className="space-y-3 flex-1 mb-6">
                     {t.features.map((f, fi) => (
                       <li key={fi} className="flex items-start gap-2">
-                        <Icon name="CheckCircle" size={16} className="flex-shrink-0 mt-0.5" style={{ color: "#a855f7" }} />
-                        <span className="text-sm text-green-300" style={{ color: "#c4b5fd" }}>{f}</span>
+                        <Icon name="CheckCircle" size={16} className="flex-shrink-0 mt-0.5" style={{ color: f.accent ? "#86efac" : "#a855f7" }} />
+                        <span className="text-sm font-medium" style={{ color: f.accent ? "#86efac" : "#c4b5fd" }}>{f.text}</span>
                       </li>
                     ))}
                   </ul>
