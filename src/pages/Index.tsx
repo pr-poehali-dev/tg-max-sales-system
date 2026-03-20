@@ -90,6 +90,8 @@ const tariffs = [
     price: "2 500",
     badge: null,
     subprice: null,
+    btnText: "Выбрать тариф",
+    btnUrl: "https://payform.ru/3saZSPl/",
     features: [
       { text: "3 дня практикума и доступа к живым эфирам", accent: false },
       { text: "Чат практикума", accent: false },
@@ -103,6 +105,8 @@ const tariffs = [
     price: "3 000",
     badge: "Скидка при оплате вдвоём",
     subprice: null,
+    btnText: "Прийти с другом",
+    btnUrl: "https://payform.ru/7maZSRn/",
     features: [
       { text: "Приходишь с другом — каждый платит вместо 2 500 ₽", accent: true },
       { text: "3 дня практикума и доступа к живым эфирам", accent: false },
@@ -117,6 +121,8 @@ const tariffs = [
     price: "7 500",
     badge: null,
     subprice: null,
+    btnText: "Выбрать тариф",
+    btnUrl: "https://payform.ru/cgaZSTW/",
     features: [
       { text: "Личная консультация: разбираем проект, позиционирование, продукт, деньги, контент, продвижение", accent: true },
       { text: "Подбираем эффективную модель продаж под ваши данные", accent: false },
@@ -522,13 +528,13 @@ export default function Index() {
                     ))}
                   </ul>
                   <a
-                    href="https://payform.ru/3saZSPl/"
+                    href={t.btnUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`block w-full py-3 rounded-xl font-bold text-center transition-all hover:scale-105 active:scale-95 ${t.highlight ? "btn-gradient text-white" : "glass"}`}
                     style={!t.highlight ? { color: "#c084fc", border: "1px solid rgba(168,85,247,0.4)" } : {}}
                   >
-                    <span>Выбрать тариф</span>
+                    <span>{t.btnText}</span>
                   </a>
                 </div>
               </AnimatedSection>
