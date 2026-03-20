@@ -90,7 +90,7 @@ const tariffs = [
     price: "2 500",
     badge: null,
     subprice: null,
-    btnText: "Выбрать тариф",
+    btnText: "Беру за 2500 руб",
     btnUrl: "https://payform.ru/3saZSPl/",
     features: [
       { text: "3 дня практикума и доступа к живым эфирам", accent: false },
@@ -172,7 +172,7 @@ export default function Index() {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium"
               style={{ color: "#c084fc" }}>
               <span className="w-2 h-2 rounded-full pulse-dot" style={{ background: "#a855f7" }} />
-              Старт 1 апреля 2025
+              Старт 1 апреля 2026
             </div>
 
             <h1 className="font-oswald font-bold leading-tight" style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)" }}>
@@ -199,7 +199,7 @@ export default function Index() {
               </p>
             </div>
 
-            <a href="https://payform.ru/3saZSPl/" target="_blank" rel="noopener noreferrer" className="inline-block btn-gradient text-white font-bold text-lg px-10 py-4 rounded-2xl glow-violet-sm transition-transform hover:scale-105 active:scale-95">
+            <a href="#tariffs" className="inline-block btn-gradient text-white font-bold text-lg px-10 py-4 rounded-2xl glow-violet-sm transition-transform hover:scale-105 active:scale-95">
               <span>Принять участие</span>
             </a>
           </div>
@@ -332,7 +332,7 @@ export default function Index() {
             <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
               Решение — <span className="gradient-text">система,</span> а не хаотичные действия
             </h2>
-            <p className="text-center mb-16" style={{ color: "#7c6d9e" }}>На практикуме ты собираешь три ключевых блока</p>
+            <p className="text-center mb-16" style={{ color: "#7c6d9e" }}>На практикуме ты решаешь три ключевых задачи</p>
           </AnimatedSection>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
@@ -357,7 +357,7 @@ export default function Index() {
           </div>
           <AnimatedSection delay={450}>
             <p className="text-center mt-10 text-lg font-semibold" style={{ color: "#c084fc" }}>
-              👉 Это работает и в TG, и в MAX
+              TG и МАХ: 2 ПЛОЩАДКИ — 1 СИСТЕМА
             </p>
           </AnimatedSection>
         </div>
@@ -483,7 +483,7 @@ export default function Index() {
       </section>
 
       {/* ─── ТАРИФЫ ─── */}
-      <section className="py-24" style={{ background: "#0a0612" }}>
+      <section id="tariffs" className="py-24" style={{ background: "#0a0612" }}>
         <div className="container mx-auto px-4">
           <AnimatedSection>
             <h2 className="font-oswald font-bold text-center mb-4" style={{ fontSize: "clamp(1.8rem, 4vw, 2.8rem)", color: "#f0eaff" }}>
@@ -603,13 +603,13 @@ export default function Index() {
                 </p>
               </div>
               <br />
-              <button className="btn-gradient text-white font-bold text-xl px-14 py-5 rounded-2xl glow-violet transition-transform hover:scale-105 active:scale-95">
-                <span>Войти в практикум</span>
-              </button>
+              <a href="#tariffs" className="inline-block btn-gradient text-white font-bold text-xl px-14 py-5 rounded-2xl glow-violet transition-transform hover:scale-105 active:scale-95">
+                <span>Иду на практикум</span>
+              </a>
               <div className="mt-8 flex items-center justify-center gap-6 flex-wrap">
                 <div className="flex items-center gap-2 text-sm" style={{ color: "#7c6d9e" }}>
                   <Icon name="Calendar" size={16} style={{ color: "#a855f7" }} />
-                  Старт 1 апреля
+                  Старт 1 апреля 2026
                 </div>
                 <div className="flex items-center gap-2 text-sm" style={{ color: "#7c6d9e" }}>
                   <Icon name="Video" size={16} style={{ color: "#a855f7" }} />
